@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="flex justify-between items-center z-10 sticky border-1 border-[#ccc] p-[15px] shadow-lg">
+    <header class="flex justify-between items-center top-0 bg-white z-10 sticky border-1 border-[#ccc] p-[15px] shadow-lg">
         <figure class="">
             <img width="200px" src="img/image.webp" alt="">
         </figure>
@@ -79,27 +79,220 @@
                 <h2>FILTER EVENTS</h2>
             </div>
 
-                <div class="grid grid-cols-5 gap-3 mt-4">
-                    <div class="relative ">
-                        <i class="fa-regular fa-calendar absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
-                        <input type="text" placeholder="All Events"
+            <div class="grid grid-cols-5 gap-3 mt-4">
+                <div class="relative ">
+                    <i class="fa-regular fa-calendar absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" placeholder="All Events"
                         class="border-gray-200 w-full border px-3 py-2 rounded-lg pl-9">
-                    </div>
-                    <div>
-
-                        <input type="text" placeholder="Search events" class="border-gray-200 border px-3 py-2 rounded-lg">
-                    </div>
-                    <div>
-
-                        <input type="text" placeholder="Cities" class="border-gray-200 border px-3 py-2 rounded-lg">
-                    </div>
-                    <div>
-
-                        <input type="text" placeholder="Distance" class="border-gray-200 border px-3 py-2 rounded-lg">
-                    </div>
-                    <!-- <input type="date" placeholder="Date"> -->
                 </div>
 
+                <div class="relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" placeholder="Search events"
+                        class="border-gray-200 w-full border px-3 pl-9 py-2 rounded-lg">
+                </div>
+
+                <div class="relative">
+                    <i class="fa-solid fa-location-dot absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" placeholder="Cities" 
+                    class="border-gray-200 border w-full px-3 pl-9 py-2 rounded-lg">
+                </div>
+
+                <div class="relative">
+                    <i class="fa-solid fa-ruler absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" placeholder="Distance"
+                        class="border-gray-200 w-full border px-3 pl-9 py-2 rounded-lg">
+                </div>
+                <div class="relative">
+                    <i class="fa-regular fa-calendar absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="date" placeholder="Date" 
+                        class="w-full border-gray-200 border px-3 pl-9 py-2 rounded-lg">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+     <section class="max-w-full mt-20 ">
+        <div class="w-[1420px] m-[50px]">
+            <div class=" flex items-center gap-3">
+                <h2 class="text-2xl inline-block tracking-[0.2px] [transform:scaleY(1.5)] font-bold origin-left">
+                    UPCOMING EVENTS</h2>
+            </div>
+           
+
+            <div class="mt-8 grid grid-cols-3 gap-8">
+
+                <div class="w-[450px] rounded-lg shadow-lg transition 
+                hover:shadow-2xl hover:-translate-y-1 cursor-pointer">
+                    <div class="w-full overflow-hidden">
+                        <img src="img/d6398de1-a9e4-44c9-96b5-4a4560175e5b_2026011068848.png" alt=""
+                            class="object-cover h-[230px] w-full transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class=" mt-3 p-5 text-sm/6 ">
+                        <h3 class="text-sm font-bold [transform:scaleY(1.5)] hover:text-red-400">RUN FOR SHREE RAM
+                            MARATHON 2026 - MUMBAI</h3>
+                        <h4 class="mt-3"><i class="fa-regular fa-calendar  text-red-400 mr-2"></i>27 December 2026</h4>
+                        <h4><i class="fa-solid fa-location-dot text-blue-400 mr-2"></i>Kolkata</h4>
+                        <h4><i class="fa-solid fa-ruler text-green-400 mr-2"></i>2km, 5km, 10km, 21km</h4>
+                        <h4> Organized by SPORTIVE (Jyoti Sangha Club)</h4>
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-red-600 font-medium">View Event Details </h4>
+                            <div>
+
+                                <i class="fa-regular fa-heart tracking-[0.2em]"></i>10
+                                <i class="fa-regular fa-comment tracking-[0.1em] text-blue-400"></i>5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[450px] rounded-lg shadow-lg transition
+                     hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+                    <div class="w-full overflow-hidden">
+                        <img src="img/gettyimages-1191841305-612x612.jpg" alt=""
+                            class="object-cover h-[230px] w-full transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class=" mt-3 p-5 text-sm/6 ">
+                        <h3 class="text-sm font-bold [transform:scaleY(1.5)] hover:text-red-400">RUNS & MILES HALF
+                            MARATHON 2027 - 2ND EDITION</h3>
+                        <h4 class="mt-3"><i class="fa-regular fa-calendar  text-red-400 mr-2"></i>27 December 2026</h4>
+                        <h4><i class="fa-solid fa-location-dot text-blue-400 mr-2"></i>Kolkata</h4>
+                        <h4><i class="fa-solid fa-ruler text-green-400 mr-2"></i>2km, 5km, 10km, 21km</h4>
+                        <h4> Organized by SPORTIVE (Jyoti Sangha Club)</h4>
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-red-600 font-medium">View Event Details </h4>
+                            <div class="flex ">
+                                <div class="hover:text-red-400 flex items-center ">
+                                    <i class="fa-regular fa-heart "></i>
+                                    <p>10</p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-comment text-blue-400"></i>5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[450px] rounded-lg shadow-lg transition
+                     hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+                    <div class="w-full overflow-hidden">
+                        <img src="img/MWC-Marathon-2026-730x438.webp" alt=""
+                            class="object-cover h-[230px] w-full transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class=" mt-3 p-5 text-sm/6 ">
+                        <h3 class="text-sm font-bold [transform:scaleY(1.5)] hover:text-red-400">RUNS & MILES HALF
+                            MARATHON 2027 - 2ND EDITION</h3>
+                        <h4 class="mt-3"><i class="fa-regular fa-calendar  text-red-400 mr-2"></i>27 December 2026</h4>
+                        <h4><i class="fa-solid fa-location-dot text-blue-400 mr-2"></i>Kolkata</h4>
+                        <h4><i class="fa-solid fa-ruler text-green-400 mr-2"></i>2km, 5km, 10km, 21km</h4>
+                        <h4> Organized by SPORTIVE (Jyoti Sangha Club)</h4>
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-red-600 font-medium">View Event Details </h4>
+                            <div class="flex ">
+                                <div class="hover:text-red-400 flex items-center ">
+                                    <i class="fa-regular fa-heart "></i>
+                                    <p>10</p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-comment text-blue-400"></i>5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[450px] rounded-lg shadow-lg transition
+                     hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+                    <div class="w-full overflow-hidden">
+                        <img src="img/marathon3.jpeg" alt=""
+                            class="object-cover h-[230px] w-full transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class=" mt-3 p-5 text-sm/6 ">
+                        <h3 class="text-sm font-bold [transform:scaleY(1.5)] hover:text-red-400">RUNS & MILES HALF
+                            MARATHON 2027 - 2ND EDITION</h3>
+                        <h4 class="mt-3"><i class="fa-regular fa-calendar  text-red-400 mr-2"></i>27 December 2026</h4>
+                        <h4><i class="fa-solid fa-location-dot text-blue-400 mr-2"></i>Kolkata</h4>
+                        <h4><i class="fa-solid fa-ruler text-green-400 mr-2"></i>2km, 5km, 10km, 21km</h4>
+                        <h4> Organized by SPORTIVE (Jyoti Sangha Club)</h4>
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-red-600 font-medium">View Event Details </h4>
+                            <div class="flex ">
+                                <div class="hover:text-red-400 flex items-center ">
+                                    <i class="fa-regular fa-heart "></i>
+                                    <p>10</p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-comment text-blue-400"></i>5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[450px] rounded-lg shadow-lg transition
+                     hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+                    <div class="w-full overflow-hidden">
+                        <img src="img/marathon2.jpg" alt=""
+                            class="object-cover h-[230px] w-full transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class=" mt-3 p-5 text-sm/6 ">
+                        <h3 class="text-sm font-bold [transform:scaleY(1.5)] hover:text-red-400">RUNS & MILES HALF
+                            MARATHON 2027 - 2ND EDITION</h3>
+                        <h4 class="mt-3"><i class="fa-regular fa-calendar  text-red-400 mr-2"></i>27 December 2026</h4>
+                        <h4><i class="fa-solid fa-location-dot text-blue-400 mr-2"></i>Kolkata</h4>
+                        <h4><i class="fa-solid fa-ruler text-green-400 mr-2"></i>2km, 5km, 10km, 21km</h4>
+                        <h4> Organized by SPORTIVE (Jyoti Sangha Club)</h4>
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-red-600 font-medium">View Event Details </h4>
+                            <div class="flex ">
+                                <div class="hover:text-red-400 flex items-center ">
+                                    <i class="fa-regular fa-heart "></i>
+                                    <p>10</p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-comment text-blue-400"></i>5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[450px] rounded-lg shadow-lg transition
+                     hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+                    <div class="w-full overflow-hidden">
+                        <img src="img/marathon1.jpg" alt=""
+                            class="object-cover h-[230px] w-full transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class=" mt-3 p-5 text-sm/6 ">
+                        <h3 class="text-sm font-bold [transform:scaleY(1.5)] hover:text-red-400">RUNS & MILES HALF
+                            MARATHON 2027 - 2ND EDITION</h3>
+                        <h4 class="mt-3"><i class="fa-regular fa-calendar  text-red-400 mr-2"></i>27 December 2026</h4>
+                        <h4><i class="fa-solid fa-location-dot text-blue-400 mr-2"></i>Kolkata</h4>
+                        <h4><i class="fa-solid fa-ruler text-green-400 mr-2"></i>2km, 5km, 10km, 21km</h4>
+                        <h4> Organized by SPORTIVE (Jyoti Sangha Club)</h4>
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-red-600 font-medium">View Event Details </h4>
+                            <div class="flex ">
+                                <div class="hover:text-red-400 flex items-center ">
+                                    <i class="fa-regular fa-heart "></i>
+                                    <p>10</p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-comment text-blue-400"></i>5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
