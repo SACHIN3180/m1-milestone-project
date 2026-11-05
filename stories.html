@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <header class="w-full top-0 z-10 items-center sticky border-1 border-[#ccc] px-5
+    py-3 shadow-lg bg-white">
+        <div class="flex justify-between items-center">
+            <figure class="">
+                <img width="200px" src="img/image.webp" alt="">
+            </figure>
+            <nav class="hidden lg:block">
+                <ul class="flex gap-8">
+                    <a href="index.html">
+                        <li class="flex  items-center gap-3 text-lg font-normal px-3 py-2 hover:text-red-500">
+                            <i class="fa-solid fa-house"></i>Home
+                        </li>
+                    </a>
+                    <a href="events.html">
+                        <li class="flex items-center gap-3 text-lg font-normal px-3 py-2  hover:text-red-500 ">
+                            <i class="fa-regular fa-calendar"></i>Events
+                        </li>
+                    </a>
+                    <a href="challange.html">
+                        <li class="flex items-center gap-3 text-lg font-normal px-3 py-2 hover:text-red-500">
+                            <i class="fa-solid fa-trophy"></i>Challanges
+                        </li>
+                    </a>
+                    <a href="cities.html">
+                        <li class="flex items-center gap-3 text-lg font-normal px-3 py-2  hover:text-red-500">
+                            <i class="fa-solid fa-location-dot"></i>Cities
+                        </li>
+                    </a>
+                    <a href="stories.html">
+                        <li
+                            class="flex items-center gap-3 text-lg font-normal px-3 py-2 rounded-lg text-red-500 bg-red-100">
+                            <i class="fa-solid fa-book-open"></i>Stories
+                        </li>
+                    </a>
+                </ul>
+
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-3">
+                <a href="login.html">
+                    <button class="m-2 cursor-pointer">
+                        Login
+                    </button>
+                </a>
+                <a href="siginup.html">
+                    <button class="m-2 cursor-pointer bg-red-500 text-white px-3 py-2 rounded-md 
+            hover:bg-red-400">
+                        Sigin Up
+                    </button>
+                </a>
+            </div>
+
+            <details class="relative lg:hidden">
+                <summary class="cursor-pointer text-2xl p-2">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </summary>
+
+                <div id
+                    class="absolute right-0 top-full mt-3 w-64 bg-white shadow-xl border border-gray-300 rounded-lg p-5">
+                    <ul class="flex flex-col gap-4">
+
+                        <a href="index.html">
+                            <li class="flex items-center gap-3 hover:text-red-500">
+                                Home
+                            </li>
+                        </a>
+                        <a href="events.html">
+                            <li class="flex items-center gap-3 hover:text-red-500">Events</li>
+                        </a>
+                        <a href="challange.html">
+                            <li class="flex items-center gap-3 hover:text-red-500">Challanges</li>
+                        </a>
+                        <a href="cities.html">
+                            <li class="flex items-center gap-3 hover:text-red-500">Cities</li>
+                        </a>
+                        <a href="stories.html">
+                            <li class="flex items-center gap-3 hover:text-red-500">Stories</li>
+                        </a>
+                    </ul>
+
+                    <div class="flex flex-col gap-3 mt-2">
+                        <a href="login.html">
+                            <button class="bg-red-600 rounded-lg px-3 py-3 text-white hover:bg-red-700">
+                                Login
+                            </button>
+                        </a>
+                        <a href="siginup.html">
+                            <button class="bg-red-600 rounded-lg px-3 py-3 text-white  hover:bg-red-400">
+                                Sign Up
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+            </details>
+        </div>
+    </header>
+
+    <section class="bg-green-700 w-full">
+        <div class="text-white  px-6 py-16">
+            <h1 class=" font-bold text-2xl lg:text-4xl font-bebas
+            whitespace-nowrap [transform:scaleY(1.5)] lg:tracking-[0.1em] uppercase">
+                <i class="fa-solid fa-book-open"></i> Running Stories
+            </h1>
+            <h2 class=" mt-6 text-xl">
+                Inspiring stories from runners across India
+            </h2>
+        </div>
+    </section>
+
+    <section class="bg-gray-200 w-full px-2 py-10 w-full">
+
+        <div class="w-full max-w-[1240px] bg-white px-4 py-12 rounded-lg m-auto shadow-lg">
+            <div class=" my flex items-center gap-3">
+                <i class="fa-solid fa-filter text-green-400"></i>
+                <h2 class="font-bold [transform:scaleY(1.2)]">FILTER CHALLANGES</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mt-4">
+                <div class="relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" placeholder="Search by author or title..."
+                        class="border-gray-200 w-full border px-3 pl-9 py-2 rounded-lg">
+                </div>
+
+                <div class="relative ">
+                    <i class="fa-solid fa-book-open absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" placeholder="All Story types"
+                        class="border-gray-200 w-full border px-3 py-2 rounded-lg pl-9">
+                </div>
+
+
+                <div class="relative">
+                    <i class="fa-solid fa-location-dot absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" placeholder="All Cities"
+                        class="border-gray-200 border w-full px-3 pl-9 py-2 rounded-lg">
+                </div>
+
+                <div class="relative">
+                    <i class="fa-solid fa-calendar absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" placeholder="Search Events"
+                        class="border-gray-200 w-full border px-3 pl-9 py-2 rounded-lg">
+                </div>
+
+            </div>
+
+            <!-- <div class="border border-gray-200 gap-5 my-6"></div> -->
+
+            <!-- <div class="flex  items-center gap-2">
+                <p>Active filters:</p> <span class="rounded-full bg-purple-100 px-3 py-1">All</span>
+            </div> -->
+
+        </div>
+    </section>
+
+    <section class="max-w-full mt-20 ">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class=" flex items-center gap-3">
+                <h2 class="text-2xl inline-block tracking-[0.2px] [transform:scaleY(1.5)] font-bold origin-left">
+                    ALL STORIES</h2>
+            </div>
+            <div class="my-2 text-gray-400">
+                <p>Showing 1 to 15 of 125 stories</p>
+            </div>
+
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="w-full min-w-0 rounded-lg shadow-lg transition 
+                hover:shadow-2xl hover:-translate-y-1 cursor-pointer border-gray-900">
+
+
+
+                    <div class="w-full overflow-hidden p-5 rounded-lg">
+
+                        <div class="flex items-center gap-3">
+                            <p class="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center">
+                                P
+                            </p>
+                            <span> @praveenrajen10</span>
+                        </div>
+
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+                        <img src="img/d6398de1-a9e4-44c9-96b5-4a4560175e5b_2026011068848.png" alt=""
+                            class="object-cover h-[230px] w-full transition-transform duration-500 hover:scale-110">
+                    </div>
+
+                    <div class=" mt-3 p-5 text-sm/6 ">
+                        <h3 class="text-sm font-bold [transform:scaleY(1.5)] hover:text-green-400 uppercase">
+                            🏃‍♂️ My Running Journey — Never Give Up! 🏅</h3>
+                        <h4 class="mt-3"> I started running in January 2026, and since then, I’ve completed 5 running
+                            events and
+                            earned 5 medals!🥇 2 medals from 5 km runs🥇 3 medals from 10 k...</h4>
+
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+
+                        <div class="flex justify-between">
+                            <div class="flex gap-5">
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-calendar  text-red-400 mr-2"></i>
+                                    <p class="text-gray-500">24 Oct 2026</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-eye text-blue-400"></i>
+                                    <p class="text-gray-500">264</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-heart text-red-400"></i>
+                                    <p>10k</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-comment text-blue-400"></i>
+                                    <p>1k</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-green-800 bg-green-100 px-2 py-1 rounded-lg">story</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full min-w-0 rounded-lg shadow-lg transition
+                     hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+                    <div class="w-full overflow-hidden p-5">
+
+                        <div class="flex items-center gap-3">
+                            <p class="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center">
+                                S
+                            </p>
+                            <span> @subhash19jan</span>
+                        </div>
+
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+
+                        <img src="img/gettyimages-1191841305-612x612.jpg" alt=""
+                            class="object-cover h-[230px] w-full transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class=" mt-3 p-5 text-sm/6 ">
+                        <h3 class="text-sm font-bold [transform:scaleY(1.5)] hover:text-green-400 uppercase">
+                            First VDHM</h3>
+                        <h4 class="mt-3"> It was an amazing experience. I was waiting since long for this marathon. It
+                            was so well
+                            managed and organised. I was preparing for this marathon and ...</h4>
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+
+                        <div class="flex justify-between">
+                            <div class="flex gap-5">
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-calendar  text-red-400 mr-2"></i>
+                                    <p class="text-gray-500">18 Oct 2026</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-eye text-blue-400"></i>
+                                    <p class="text-gray-500">264</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-heart text-red-400"></i>
+                                    <p>10k</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-comment text-blue-400"></i>
+                                    <p>1k</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-green-800 bg-green-100 px-2 py-1 rounded-lg">story</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full min-w-0 rounded-lg shadow-lg transition
+                     hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+                    <div class="w-full overflow-hidden p-5">
+                        <div class="flex items-center gap-3">
+                            <p class="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center">
+                                PK
+                            </p>
+                            <span> @kamleshbaghari14</span>
+                        </div>
+
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+                        <img src="img/MWC-Marathon-2026-730x438.webp" alt=""
+                            class="object-cover h-[230px] w-full transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class=" mt-3 p-5 text-sm/6 ">
+                        <h3 class="text-sm font-bold [transform:scaleY(1.5)] hover:text-red-400">
+                            VDHM
+                        </h3>
+                        <h4> I was a great experience and I hit my PB today 18.10.26 Half marathon: 1:43:57I have too
+                            much pain and swelling in my right ankle joint but I decided ...</h4>
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+
+                        <div class="flex justify-between">
+                            <div class="flex gap-5">
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-calendar  text-red-400 mr-2"></i>
+                                    <p class="text-gray-500">18 Oct 2026</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-eye text-blue-400"></i>
+                                    <p class="text-gray-500">264</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-heart text-red-400"></i>
+                                    <p>10k</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-comment text-blue-400"></i>
+                                    <p>1k</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-green-800 bg-green-100 px-2 py-1 rounded-lg">story</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full min-w-0 rounded-lg shadow-lg transition 
+                hover:shadow-2xl hover:-translate-y-1 cursor-pointer border-gray-900">
+
+
+
+                    <div class="w-full overflow-hidden p-5 rounded-lg">
+
+                        <div class="flex items-center gap-3">
+                            <p class="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center">
+                                P
+                            </p>
+                            <span> @tapas.roy</span>
+                        </div>
+
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+                        <img src="img/stories.webp" alt=""
+                            class="object-cover h-[230px] w-full transition-transform duration-500 hover:scale-110">
+                    </div>
+
+                    <div class=" mt-3 p-5 text-sm/6 ">
+                        <h3 class="text-sm font-bold [transform:scaleY(1.5)] hover:text-green-400 uppercase">
+                            🏃‍♂️ My Running Journey — Never Give Up! 🏅</h3>
+                        <h4 class="mt-3"> I started running in January 2026, and since then, I’ve completed 5 running
+                            events and
+                            earned 5 medals!🥇 2 medals from 5 km runs🥇 3 medals from 10 k...</h4>
+
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+
+                        <div class="flex justify-between">
+                            <div class="flex gap-5">
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-calendar  text-red-400 mr-2"></i>
+                                    <p class="text-gray-500">24 Oct 2026</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-eye text-blue-400"></i>
+                                    <p class="text-gray-500">264</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-heart text-red-400"></i>
+                                    <p>10k</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-comment text-blue-400"></i>
+                                    <p>1k</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-green-800 bg-green-100 px-2 py-1 rounded-lg">story</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full min-w-0 rounded-lg shadow-lg transition 
+                hover:shadow-2xl hover:-translate-y-1 cursor-pointer border-gray-900">
+
+
+
+                    <div class="w-full overflow-hidden p-5 rounded-lg">
+
+                        <div class="flex items-center gap-3">
+                            <p class="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center">
+                                P
+                            </p>
+                            <span> @palash.prog</span>
+                        </div>
+
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+                        <img src="img/image (2).webp" alt=""
+                            class="object-cover h-[230px] w-full transition-transform duration-500 hover:scale-110">
+                    </div>
+
+                    <div class=" mt-3 p-5 text-sm/6 ">
+                        <h3 class="text-sm font-bold [transform:scaleY(1.5)] hover:text-green-400 uppercase">
+                            🏃‍♂️ My Running Journey — Never Give Up! 🏅</h3>
+                        <h4 class="mt-3"> I started running in January 2026, and since then, I’ve completed 5 running
+                            events and
+                            earned 5 medals!🥇 2 medals from 5 km runs🥇 3 medals from 10 k...</h4>
+
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+
+                        <div class="flex justify-between">
+                            <div class="flex gap-5">
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-calendar  text-red-400 mr-2"></i>
+                                    <p class="text-gray-500">24 Oct 2026</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-eye text-blue-400"></i>
+                                    <p class="text-gray-500">264</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-heart text-red-400"></i>
+                                    <p>10k</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-comment text-blue-400"></i>
+                                    <p>1k</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-green-800 bg-green-100 px-2 py-1 rounded-lg">story</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full min-w-0 rounded-lg shadow-lg transition 
+                hover:shadow-2xl hover:-translate-y-1 cursor-pointer border-gray-900">
+
+
+
+                    <div class="w-full overflow-hidden p-5 rounded-lg">
+
+                        <div class="flex items-center gap-3">
+                            <p class="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center">
+                                P
+                            </p>
+                            <span> @mpeyme</span>
+                        </div>
+
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+                        <img src="img/OIP (1).jpg" alt=""
+                            class="object-cover h-[230px] w-full transition-transform duration-500 hover:scale-110">
+                    </div>
+
+                    <div class=" mt-3 p-5 text-sm/6 ">
+                        <h3 class="text-sm font-bold [transform:scaleY(1.5)] hover:text-green-400 uppercase">
+                            🏃‍♂️ My Running Journey — Never Give Up! 🏅</h3>
+                        <h4 class="mt-3"> I started running in January 2026, and since then, I’ve completed 5 running
+                            events and
+                            earned 5 medals!🥇 2 medals from 5 km runs🥇 3 medals from 10 k...</h4>
+
+                        <div class="border border-gray-300 gap-4 my-4"> </div>
+
+                        <div class="flex justify-between">
+                            <div class="flex gap-5">
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-calendar  text-red-400 mr-2"></i>
+                                    <p class="text-gray-500">24 Oct 2026</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-eye text-blue-400"></i>
+                                    <p class="text-gray-500">264</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-heart text-red-400"></i>
+                                    <p>10k</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fa-regular fa-comment text-blue-400"></i>
+                                    <p>1k</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-green-800 bg-green-100 px-2 py-1 rounded-lg">story</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="mt-12 w-full bg-[#111827] px-4 sm:px-6 py-10">
+
+        <div
+            class="flex flex-col sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:justify-evenly gap-10 lg:gap-0 text-left">
+
+            <div>
+                <img src="img/image (1).webp" alt="" width="220px" class="w-[180px] sm:w-[200px] lg:w-[220px]">
+                <p class="text-[#9ca3af] mt-4">
+                    MarathonMitra is India's first community- <br class="hidden lg:block" /> driven platform that brings
+                    together
+                    <br class="hidden lg:block" />runners, events, and stories — all in one <br
+                        class="hidden lg:block" /> place.
+                </p>
+            </div>
+
+            <div class="text-white text-sm/8">
+                <ul>
+                    <li class="font-bold">EXPLORE</li>
+                    <li>Events</li>
+                    <li>Challenges</li>
+                    <li>Stories</li>
+                    <li>Articles</li>
+                    <li>Cities</li>
+                    <li>Runners</li>
+                </ul>
+            </div>
+
+            <div class="text-white text-sm/8">
+                <ul>
+                    <li class="font-bold">COMPANY</li>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                    <li>FAQ</li>
+                    <li>Organiser FAQ</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+
+            <div class="text-white text-sm/8">
+                <ul>
+                    <li class="font-bold">Community</li>
+                    <li>Share Your Story</li>
+                    <li>Become a Sponsor</li>
+                    <li>Become an Organizer</li>
+                    <li>Organizer Pricing</li>
+                </ul>
+
+                <div class="flex items-center gap-3 text-xl mt-2">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-meta"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-[#374151]"></div>
+        <div class="w-full">
+            <p class="text-[#9ca3af] text-xs sm:text-sm leading-6">
+                <span class="font-bold">Disclaimer:</span>
+                MarathonMitra is a discovery and community platform. We do not organize or manage events. Event details,
+                registrations, and outcomes are the responsibility of respective organizers.
+            </p>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-[#374151]"></div>
+
+        <div class="w-full">
+            <p class="text-[#9ca3af] text-xs sm:text-sm">
+                © 2026 MarathonMitra. All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
